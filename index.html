@@ -14,31 +14,40 @@ body {
 }
 
 header {
-    background-color: #222;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('https://images.unsplash.com/photo-1581090700227-1e8f8f7a8b0c');
+    background-size: cover;
+    background-position: center;
     color: white;
-    padding: 60px 20px;
     text-align: center;
+    padding: 100px 20px;
 }
 
 header h1 {
     margin: 0;
-    font-size: 45px;
+    font-size: 48px;
     color: #c9a24d;
 }
 
 header p {
     font-size: 20px;
+    margin: 10px 0;
 }
 
 .btn {
     display: inline-block;
-    margin-top: 20px;
-    padding: 14px 28px;
+    margin: 15px;
+    padding: 14px 30px;
     background-color: #25D366;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+}
+
+.btn-email {
+    background-color: #c9a24d;
+    color: black;
 }
 
 section {
@@ -59,11 +68,22 @@ section {
     font-size: 18px;
 }
 
+.contact p {
+    font-size: 18px;
+}
+
 footer {
     background-color: #111;
     color: white;
     text-align: center;
     padding: 25px;
+    margin-top: 20px;
+}
+
+.impressum {
+    font-size: 14px;
+    background-color: #eee;
+    padding: 30px;
 }
 </style>
 </head>
@@ -74,32 +94,41 @@ footer {
     <h1>Kabel-Kiefer</h1>
     <p>Elektromeisterbetrieb</p>
     <p>Geprüfter Elektromeister (HWK)</p>
-    <a class="btn" href="tel:+4915208860070">Jetzt anrufen</a>
+    <a class="btn" href="tel:+4915208860070">📞 Jetzt anrufen</a>
+    <a class="btn btn-email" href="mailto:Kabelkiefer@outlook.de">✉ Angebot anfragen</a>
 </header>
 
 <section class="services">
     <h2>Unsere Leistungen</h2>
     <ul>
-        <li>Elektroinstallationen</li>
-        <li>Reparaturen & Fehlerbehebung</li>
-        <li>Modernisierung von Altanlagen</li>
-        <li>Beleuchtungsinstallationen</li>
-        <li>Sicherungskasten & Verteiler</li>
+        <li>⚡ Elektroinstallationen</li>
+        <li>🔧 Reparaturen & Fehlerbehebung</li>
+        <li>🏠 Modernisierung von Altanlagen</li>
+        <li>💡 Beleuchtungsinstallationen</li>
+        <li>🛠 Sicherungskasten & Verteiler</li>
     </ul>
 </section>
 
 <section>
+    <h2>Warum Kabel-Kiefer?</h2>
+    <p>✔ Meisterbetrieb mit geprüfter Qualifikation</p>
+    <p>✔ Schnelle Terminvergabe</p>
+    <p>✔ Zuverlässig & sauber</p>
+    <p>✔ Transparente Preise</p>
+</section>
+
+<section class="contact">
     <h2>Kontakt</h2>
     <p>Telefon: +49 152 088 600 70</p>
     <p>E-Mail: Kabelkiefer@outlook.de</p>
 </section>
 
-<section>
+<section class="impressum">
     <h2>Impressum</h2>
     <p>Kabel-Kiefer Elektromeisterbetrieb</p>
     <p>Inhaber: Max Mustermann</p>
     <p>Deutschland</p>
-    <p>Tel: +49 152 088 600 70</p>
+    <p>Telefon: +49 152 088 600 70</p>
     <p>E-Mail: Kabelkiefer@outlook.de</p>
 </section>
 
