@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elektromeisterbetrieb</title>
+
+<style>
+/* ===== HIER DEINE LOGO FARBEN EINTRAGEN ===== */
+:root {
+  --primary: #1e3c72;     /* Hauptfarbe vom Logo */
+  --secondary: #f5b400;   /* Akzentfarbe vom Logo */
+  --dark: #111111;        /* Dunkle Farbe vom Logo */
+  --light: #ffffff;
+}
+
+/* ===== Allgemein ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+/* ===== Navigation ===== */
+header {
+  background: var(--primary);
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+header h1 {
+  font-size: 22px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: var(--secondary);
+}
+
+/* ===== Hero Bereich ===== */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  url("https://images.unsplash.com/photo-1581090700227-1e8e2c6b6a5f");
+  background-size: cover;
+  background-position: center;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: var(--secondary);
+  color: var(--dark);
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* ===== Leistungen ===== */
+.section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.section h3 {
+  font-size: 30px;
+  margin-bottom: 50px;
+  color: var(--primary);
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.service-box {
+  padding: 30px;
+  background: #f9f9f9;
+  border-left: 5px solid var(--secondary);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  border-radius: 8px;
+}
+
+/* ===== Über uns ===== */
+.about {
+  background: var(--primary);
+  color: white;
+  padding: 80px 10%;
+  text-align: center;
+}
+
+/* ===== Kontakt ===== */
+.contact {
+  background: #f2f2f2;
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.contact p {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: var(--dark);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 28px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Elektromeisterbetrieb Mustermann</h1>
+  <nav>
+    <a href="#leistungen">Leistungen</a>
+    <a href="#ueber">Über uns</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h2>Ihr Meisterbetrieb für moderne Elektrotechnik</h2>
+    <p>Qualität. Sicherheit. Fachkompetenz.</p>
+    <a href="#kontakt" class="btn">Jetzt Beratung anfragen</a>
+  </div>
+</section>
+
+<section id="leistungen" class="section">
+  <h3>Unsere Leistungen</h3>
+  <div class="services">
+    <div class="service-box">
+      <h4>Elektroinstallationen</h4>
+      <p>Fachgerechte Installationen für Neubau und Sanierung.</p>
+    </div>
+    <div class="service-box">
+      <h4>Smart Home</h4>
+      <p>Moderne Gebäudetechnik für mehr Komfort und Sicherheit.</p>
+    </div>
+    <div class="service-box">
+      <h4>Photovoltaik</h4>
+      <p>Nachhaltige Energielösungen für Ihre Zukunft.</p>
+    </div>
+    <div class="service-box">
+      <h4>Wartung & Reparatur</h4>
+      <p>Schnelle und zuverlässige Fehlerbehebung.</p>
+    </div>
+  </div>
+</section>
+
+<section id="ueber" class="about">
+  <h3>Über unseren Meisterbetrieb</h3>
+  <p>
+    Als zertifizierter Elektromeisterbetrieb stehen wir für höchste Qualität,
+    Sicherheit und saubere Ausführung. Mit langjähriger Erfahrung und modernster
+    Technik setzen wir Ihre Projekte zuverlässig um.
+  </p>
+</section>
+
+<section id="kontakt" class="contact">
+  <h3>Kontakt</h3>
+  <p>📍 Musterstraße 1, 12345 Musterstadt</p>
+  <p>📞 0123 456789</p>
+  <p>✉ info@elektromeister.de</p>
+</section>
+
+<footer>
+  © 2026 Elektromeisterbetrieb Mustermann – Alle Rechte vorbehalten
+</footer>
+
+</body>
+</html>
